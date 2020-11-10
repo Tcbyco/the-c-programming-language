@@ -38,8 +38,6 @@ int main(void)
       {
         longestWord = currentWordLength;
       }
-      // this loses the final word, because it isn't added until we reach a new word.
-      // on EOF that won't happen.
     }
   }
   // add the last word that was cut off by EOF
@@ -74,5 +72,4 @@ int main(void)
   }
   printf("    1 2 3 4 5 6 7 8 9 10 11 12\n");
   printf("      Letter Count    \n");
-  printf("three: %d, four: %d", wdLengths[3], wdLengths[4]);
 }
